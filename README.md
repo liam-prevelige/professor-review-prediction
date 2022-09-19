@@ -5,7 +5,7 @@
 
 I built a full-stack web app that uses machine learning to predict a professor's teaching quality using only their photo.
 
-![Example Web-App Prediction](hack-a-thing-1-22f-liam\ex_prediction_1.png)  
+![Example Web-App Prediction](ex_prediction_1.png)  
 
 The web-app is built with React, Python, Flask, and MongoDB. A user inputs a professor's name and a URL to their photo. An analysis with the different observed criteria appears on the right and a list of all analyzed professors with predicted ratings is maintained on the left.  
 
@@ -13,7 +13,7 @@ The predictions are made using a linear regression using training data I made by
 
 Unsurprisingly, the regression isn't very accurate and there's a low correlation between the criteria I accepted and a professor's teaching ability. I didn't expect a significant relationship, but I did think it'd be funny to make.  
 
-![Example Web-App Prediction](hack-a-thing-1-22f-liam\prof_tregubov_analysis.png)  
+![Professor Tregubov (Non-Rigged) Analysis](prof_tregubov_analysis.png)  
 
 I also made sure to do a bit of rigging where it counts.  
 
