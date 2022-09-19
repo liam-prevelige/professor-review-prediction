@@ -1,3 +1,7 @@
+# Framework for identifying emotion in a picture with someone's face.
+# Adapted by Liam Prevelige from https://github.com/oarriaga/paz
+# September 2022  
+
 from paz.applications import HaarCascadeFrontalFace, MiniXceptionFER
 import paz.processors as pr
 
