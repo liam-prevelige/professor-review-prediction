@@ -1,6 +1,10 @@
 /*
-Professor Review Predictor
-Created by Liam Prevelige, August 2022
+Frontend framework for Professor Review Predictor
+
+Given a photo of a Dartmouth Professor creates a prediction on a 
+5-point scale for the quality of their teaching.
+
+Created by Liam Prevelige, September 2022
 
 Sends & receives information via API from MongoDB.
 */
@@ -20,7 +24,7 @@ class App extends Component {
       image_url: '',
 
       professors: [],  // list of dictionaries for professors' name and prediction results
-      last_analysis: [],
+      last_analysis: [],  // dictionary for one professor and contextualized results
       professors_loading: false,
       analysis_loading: false
     };
@@ -112,6 +116,7 @@ class App extends Component {
       <div className="App">
         <div className="app-title">Professor Review Predictor</div>
         <div className="app-description">(Poorly) Predict a Dartmouth professor's teaching reviews using nothing but their picture.</div>
+        <div className="app-description">Uses React, Python, Flask, MongoDB, Machine Learning, and Statistical Analysis.</div>
         <div className="rowC">
           {/* Start of input column */}
           <div className="Inputs-col">

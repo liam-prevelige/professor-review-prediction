@@ -41,8 +41,7 @@
   font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: calc(8px + 2vmin);
   font-style: italic;
-  /* padding-top: 50px;
-  padding-bottom: -50px; */
+  padding-bottom: -50px;
 }
 
 .col-title {
@@ -80,6 +79,7 @@
     align-items: left;
     justify-content: center;
     margin: 10vh;
+    margin-top: 5vh;
     text-align: left;
     margin-left: 5vh;
     height: max-content;
@@ -104,12 +104,7 @@ input {
     border-radius: 3px;
 }
 
-label {
-    font-size: 14px;
-    color: #d1d1d1;
-    margin-bottom: 4px;
-}
-
+/* https://getcssscan.com/css-buttons-examples */
 .delete-button {
     background: #FF4742;
     border: 1px solid #FF4742;
@@ -146,6 +141,7 @@ label {
     opacity: .5;
 }
 
+/* https://getcssscan.com/css-buttons-examples */
 .add-professor-button {
     appearance: none;
     height: 100%;

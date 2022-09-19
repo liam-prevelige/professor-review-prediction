@@ -1,5 +1,5 @@
 /*
-Output component for representing an professors's analysis 
+Output component for representing all professorss' analysis in list form
 */
 
 import React, { Component } from 'react';

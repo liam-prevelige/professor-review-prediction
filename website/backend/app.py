@@ -1,7 +1,9 @@
-"""
-Backend framework for Professor Review Predictor
-Created by Liam Prevelige, September 2022
-"""
+# Backend framework for Professor Review Predictor
+#
+# Given a photo of a Dartmouth Professor creates a (very poor) prediction on a 
+# 5-point scale for the quality of their teaching. 
+#
+# Created by Liam Prevelige, September 2022
 
 from flask import Flask
 from pymongo import MongoClient
@@ -16,8 +18,8 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 mongoClient = MongoClient('mongodb+srv://cs69:cs69pass@cluster0.gb5yoct.mongodb.net/?retryWrites=true&w=majority')
 db = mongoClient.get_database('professors')
-all_analysis_col = db.get_collection('professors_analysis')
-last_analysis_col = db.get_collection('last_analysis')
+all_analysis_col = db.get_collection('professors_analysis')  # stores all analyzed professors, rating, & URL
+last_analysis_col = db.get_collection('last_analysis')  # stores the last analyzed professor with contextualized data
 
 @app.route('/addprofessor/<name>/<path:image_url>', methods=['PUT'])
 def addprofessor(name, image_url):
@@ -74,7 +76,7 @@ def deleteprofessor(name):
 @app.route('/getprofessors/', methods=['GET'])
 def getprofessors():
   """ 
-  Gets a list of dictionaries for all professors.
+  Gets the name, rating, and image URL for all professors from the DB.
   """
   analysis_json = []
   try:
@@ -97,7 +99,7 @@ def getprofessors():
 @app.route('/getlastanalysis/', methods=['GET'])
 def getlastanalysis():
   """ 
-  Gets results from last analysis.
+  Gets results from last analysis, including contextualized ratings for each criteria.
   """
   analysis_json = []
   try:

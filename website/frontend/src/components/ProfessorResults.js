@@ -1,5 +1,5 @@
 /*
-Output component for representing an professor's prediction results
+Output component for representing an professor's image & prediction results
 */
 
 import React, { Component } from 'react';
