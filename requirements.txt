@@ -1,0 +1,14 @@
+python3
+dnspython
+flask
+flask_cors
+npm
+pymongo
+paz
+tensorflow
+numpy
+matplotlib
+cv2
+keras
+argparse
+urllib

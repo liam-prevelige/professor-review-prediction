@@ -1,0 +1,235 @@
+.App {
+    text-align: center;
+}
+
+.inputs-body {
+    background-color: #e0e6ec;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    text-align: left;
+    padding: 5vh;
+    border: 2px solid #2c3844;
+    border-radius: 4px;
+    height: max-content;
+}
+
+.results-body {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    text-align: left;
+    padding: 5vh;
+    border: 2px solid #2c3844;
+    border-radius: 4px;
+}
+
+.app-title {
+    color: #171d24;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: calc(22px + 2vmin);
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: -50px;
+}
+
+.app-description {
+  color: #171d24;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: calc(8px + 2vmin);
+  font-style: italic;
+  /* padding-top: 50px;
+  padding-bottom: -50px; */
+}
+
+.col-title {
+    color: #2c3844;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: calc(15px + 2vmin);
+    font-weight: bold;
+    padding-left: 5vh;
+    padding-bottom: 15px;
+}
+
+.subtitle {
+    color: #2c3844;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: calc(3px + 2vmin);
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.Inputs-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 10vh;
+    text-align: left;
+    margin-right: 5vh;
+}
+
+.Results-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 10vh;
+    text-align: left;
+    margin-left: 5vh;
+    height: max-content;
+}
+
+.result-string {
+    color: #2c3844;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: calc(3px + 2vmin);
+    padding: 5px;
+    padding-left: 5px;
+}
+
+.rowC {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    border: 1px solid #e1e1e1;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+label {
+    font-size: 14px;
+    color: #d1d1d1;
+    margin-bottom: 4px;
+}
+
+.delete-button {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 10px 12px;
+    margin: 5px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.delete-button:hover,
+.delete-button:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+.delete-button:active {
+    opacity: .5;
+}
+
+.add-professor-button {
+    appearance: none;
+    height: 100%;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin: 3px;
+    margin-bottom: 10px;
+}
+
+.add-professor-button:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.add-professor-button:hover {
+    background-color: #2c974b;
+}
+
+.add-professor-button:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+.add-professor-button:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.add-professor-button:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+input[type=text], input[type=number], input[type=result] {
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+    height: 100%;
+    margin: 2px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+input[type=result] {
+    border: 2px solid #c5cfd8;
+    background-color: #e8edf1;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    border-radius: 4px;
+    padding: 8px;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 2px;
+    vertical-align: middle;
+    cursor: default;
+    outline: none;
+}
