@@ -5,7 +5,8 @@
 
 I built a full-stack web app that uses machine learning to predict a professor's teaching quality using only their photo.
 
-![Example Web-App Prediction](ex_prediction_1.png)  
+![Example Web-App Prediction](ex_prediction_1.png)
+_Sorry Professor Cormen_  
 
 The web-app is built with React, Python, Flask, and MongoDB. A user inputs a professor's name and a URL to their photo. An analysis with the different observed criteria appears on the right and a list of all analyzed professors with predicted ratings is maintained on the left.  
 
